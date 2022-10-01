@@ -2,10 +2,6 @@
 * Simple Bot Multi-Device Para WhatsApp. ✨
 
 <p align="center">
-<img src="./media/Logo.jpg" width="250" height="250"/>
-</p>
-
-<p align="center">
 <a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/MAINTENED-YES-blue?colorA=%23ff0000&colorB=%230000ff&style=for-the-badge"</a>
 </p>
 
@@ -28,3 +24,5 @@
 ```bash
 > npm start
 ```
+
+# Favor de mantener los créditos.
