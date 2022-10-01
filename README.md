@@ -2,7 +2,7 @@
 * Simple Bot Multi-Device Para WhatsApp. ✨
 
 <p align="center">
-<img src="./media/Logo.jpg" width="250" height="300"/>
+<img src="./media/Logo.jpg" width="250" height="250"/>
 </p>
 
 <p align="center">
