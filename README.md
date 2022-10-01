@@ -25,4 +25,4 @@
 > npm start
 ```
 
-### Favor de mantener los créditos.
+####* Favor de mantener los créditos.
