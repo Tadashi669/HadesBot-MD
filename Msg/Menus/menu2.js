@@ -1,0 +1,64 @@
+const menulogos = (prefix) => {
+return`╭─── *⌈ Menú Maker ⌋*
+▢ ${prefix}neongreen
+▢ ${prefix}thunder
+▢ ${prefix}glow
+▢ ${prefix}metalfire
+▢ ${prefix}demongreen
+▢ ${prefix}neondevil
+▢ ${prefix}lava
+▢ ${prefix}halloween
+▢ ${prefix}colaq
+▢ ${prefix}thunderv2
+▢ ${prefix}demonfire
+▢ ${prefix}horror
+▢ ${prefix}matrix
+▢ ${prefix}transformer
+▢ ${prefix}berry
+▢ ${prefix}luxury
+▢ ${prefix}vidrio
+▢ ${prefix}arena
+▢ ${prefix}nieve
+▢ ${prefix}neon3
+▢ ${prefix}nuvem
+▢ ${prefix}jeans
+▢ ${prefix}metalblue
+▢ ${prefix}style
+▢ ${prefix}pink
+▢ ${prefix}carbon
+▢ ${prefix}asfalto
+▢ ${prefix}huesos
+▢ ${prefix}neon
+▢ ${prefix}neon3d
+▢ ${prefix}break
+▢ ${prefix}blood
+▢ ${prefix}natal
+▢ ${prefix}jokerlogo
+▢ ${prefix}ice
+▢ ${prefix}lapis
+▢ ${prefix}3dstone
+▢ ${prefix}fiction
+▢ ${prefix}rainbow
+▢ ${prefix}toxic
+▢ ${prefix}capitanamerica
+▢ ${prefix}neontxt
+▢ ${prefix}pornhub
+▢ ${prefix}stone
+▢ ${prefix}steel
+▢ ${prefix}space
+▢ ${prefix}marvel
+▢ ${prefix}glitch
+▢ ${prefix}glitch2
+▢ ${prefix}grafity
+▢ ${prefix}grafity2
+▢ ${prefix}lobo
+▢ ${prefix}lobo2
+▢ ${prefix}lobo3
+▢ ${prefix}ninjalogo
+▢ ${prefix}leonlogo
+▢ ${prefix}blackpink
+▢ ${prefix}gameover
+▢ ${prefix}glitchtext
+╰──────────────❑`
+}
+exports.menulogos = menulogos
