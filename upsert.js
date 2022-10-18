@@ -6,7 +6,6 @@ const os = require("os");
 const PhoneNumber = require('awesome-phonenumber')
 const translate = require('@vitalets/google-translate-api');
 const { exec, spawn, execSync } = require("child_process")
-const { EmojiAPI } = require("emoji-api")
 const FileType = require('file-type')
 const request = require('request')
 const chalk = require('chalk')
@@ -27,7 +26,6 @@ const { sleep, uploadImages, getBuffer, getRandom, formatNumber, h2k, niceBytes,
 const { formatp, isUrl, runtime, parseMention } = require('./lib/src/Functions')
 
 // Setting
-let emoji = new EmojiAPI()
 let botname = name
 let ownerNumber = owner
 let Scrap = require('./lib/Scraper/scrapper')
@@ -477,18 +475,6 @@ const deleteitem = (arr, value) => {
       return arr
    }
 
-
-const spam = (teks, number, id, mens = [], mek = m) => new Promise(async(resolve, reject) => {
-			if (!isNaN(number)) {
-				for (let i = 1; Number(number) >= i; i++) {
-					await m.reply(teks, id, mens, mek)
-				}
-				resolve('Sucess.')
-			} else {
-				reject('No number.')
-			}
-		})
-		
 
 const menu1 = menuofc(isOwner, m.sender, hourTime, week1, calender1, Publi_Priv, prefix)
 const menu2 = menulogos(prefix)
@@ -2675,141 +2661,6 @@ var emoji1 = q.split('/')[0]
 var emoji2 = q.split('/')[1]
 let anu = (await fetchJson('https://'+`tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`)).results[0]
 await sendStickerFromUrl(anu.url)
-}
-break
-case 'emoji': {
-if (!q) return m.reply('Y el emoji?')
-if (q.length > 2) return m.reply('Solo un emoji')
-emoji.get(args[0]).then(emoji => {
-sendStickerFromUrl(emoji.images[4].url)
-    }
-  ).catch(e => m.reply('Emoji no compartible!!'))
-}
-break
-case 'apple': {
-if (!q) return m.reply('Y el emoji?')
-if (q.length > 2) return m.reply('Solo un emoji')
-emoji.get(args[0]).then(emoji => {
-sendStickerFromUrl(emoji.images[0].url)
-    }
-  ).catch(e => m.reply('Emoji no compartible!!'))
-}
-break
-case 'googlee': {
-if (!q) return m.reply('Y el emoji?')
-if (q.length > 2) return m.reply('Solo un emoji')
-emoji.get(args[0]).then(emoji => {
-sendStickerFromUrl(emoji.images[1].url)
-    }
-  ).catch(e => m.reply('Emoji no compartible!!'))
-}
-break
-case 'samsung': {
-if (!q) return m.reply('Y el emoji?')
-if (q.length > 2) return m.reply('Solo un emoji')
-emoji.get(args[0]).then(emoji => {
-sendStickerFromUrl(emoji.images[2].url)
-    }
-  ).catch(e => m.reply('Emoji no compartible!!'))
-}
-break
-case 'microsoft': {
-if (!q) return m.reply('Y el emoji?')
-if (q.length > 2) return m.reply('Solo un emoji')
-emoji.get(args[0]).then(emoji => {
-sendStickerFromUrl(emoji.images[3].url)
-    }
-  ).catch(e => m.reply('Emoji no compartible!!'))
-}
-break
-case 'twitter': {
-if (!q) return m.reply('Y el emoji?')
-if (q.length > 2) return m.reply('Solo un emoji')
-emoji.get(args[0]).then(emoji => {
-sendStickerFromUrl(emoji.images[5].url)
-    }
-  ).catch(e => m.reply('Emoji no compartible!!'))
-}
-break
-case 'facebook': {
-if (!q) return m.reply('Y el emoji?')
-if (q.length > 2) return m.reply('Solo un emoji')
-emoji.get(args[0]).then(emoji => {
-sendStickerFromUrl(emoji.images[6].url)
-    }
-  ).catch(e => m.reply('Emoji no compartible!!'))
-}
-break
-case 'joypixels': {
-if (!q) return m.reply('Y el emoji?')
-if (q.length > 2) return m.reply('Solo un emoji')
-emoji.get(args[0]).then(emoji => {
-sendStickerFromUrl(emoji.images[7].url)
-    }
-  ).catch(e => m.reply('Emoji no compartible!!'))
-}
-break
-case 'open-emoji': {
-if (!q) return m.reply('Y el emoji?')
-if (q.length > 2) return m.reply('Solo un emoji')
-emoji.get(args[0]).then(emoji => {
-sendStickerFromUrl(emoji.images[8].url)
-    }
-  ).catch(e => m.reply('Emoji no compartible!!'))
-}
-break
-case 'emojidex': {
-if (!q) return m.reply('Y el emoji?')
-if (q.length > 2) return m.reply('Solo un emoji')
-emoji.get(args[0]).then(emoji => {
-sendStickerFromUrl(emoji.images[9].url)
-    }
-  ).catch(e => m.reply('Emoji no compartible!!'))
-}
-break
-case 'messenger':{
-if (!q) return m.reply('Y el emoji?')
-if (q.length > 2) return m.reply('Solo un emoji')
-emoji.get(args[0]).then(emoji => {
-sendStickerFromUrl(emoji.images[10].url)
-    }
-  ).catch(e => m.reply('Emoji no compartible!!'))
-}
-break
-case 'lg':{
-if (!q) return m.reply('Y el emoji?')
-if (q.length > 2) return m.reply('Solo un emoji')
-emoji.get(args[0]).then(emoji => {
-sendStickerFromUrl(emoji.images[11].url)
-    }
-  ).catch(e => m.reply('Emoji no compartible!!'))
-}
-break
-case 'htc':{
-if (!q) return m.reply('Y el emoji?')
-if (q.length > 2) return m.reply('Solo un emoji')
-emoji.get(args[0]).then(emoji => {
-sendStickerFromUrl(emoji.images[12].url)
-    }
-  ).catch(e => m.reply('Emoji no compartible!!'))
-}
-break
-case 'mozilla':{
-if (!q) return m.reply('Y el emoji?')
-if (q.length > 2) return m.reply('Solo un emoji')
-emoji.get(args[0]).then(emoji => {
-sendStickerFromUrl(emoji.images[13].url)
-    }
-  ).catch(e => m.reply('Emoji no compartible!!'))
-}
-break
-case 'softbank':{
-if (!q) return m.reply('Y el emoji?')
-if (q.length > 2) return m.reply('Solo un emoji')
-emoji.get(args[0]).then(emoji => {
-sendStickerFromUrl(emoji.images[14].url)
-    }
-  ).catch(e => m.reply('Emoji no compartible!!'))
 }
 break
 
