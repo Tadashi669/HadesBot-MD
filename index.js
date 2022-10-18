@@ -37,17 +37,14 @@ const simple = require('./lib/simple')
 
 // Upsert
 Tesla.ev.on('messages.upsert', async (up) => {
-try {
 if (!up.messages) return
 const v = up.messages[0]
 let m = simple.smsg(Tesla, v, store)
 if (!v.message) return
 v.message = (Object.keys(v.message)[0] === 'ephemeralMessage') ? v.message.ephemeralMessage.message : v.message
 require("./upsert")(Tesla, m, v, store, welcome)
-   } catch(e) { 
-Tesla.sendMessage("5212213261679@s.whatsapp.net", {text: require('util').format(e)})
- }
-})
+  }
+)
 
 
 
@@ -161,7 +158,6 @@ El nombre del grupo ha sido cambiado a *${res.subject}*`
 
 /*     Functions     */
 
-Tesla.isJadiBot = false
 Tesla.decodeJid = (jid) => {
 if (!jid && /:\d+@/gi.test(jid)) {
 let decode = jidDecode(jid) || {};
